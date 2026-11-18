@@ -8,11 +8,14 @@
     <string name="shortcut_screenshot">屏幕截图</string>
     <string name="shortcut_hub">打开效率中心</string>
     <string name="panel_running">Smart Edge 正在运行</string>
+    <string name="panel_notification_channel">Smart Edge 服务</string>
+    <string name="panel_notification_desc">保持侧边栏在所有应用上层显示</string>
     <string name="start_panel">启动面板</string>
     <string name="stop_panel">停止面板</string>
     <string name="add_apps">管理应用</string>
     <string name="settings">设置</string>
     <string name="grant_permission">授予悬浮窗权限</string>
+    <string name="permission_rationale">为了在其他应用上层显示面板，请授予“显示在其他应用上层”权限。</string>
     <string name="remove_from_panel">从面板中移除</string>
     <string name="add_to_panel">已添加到面板</string>
     <string name="search_apps">搜索应用…</string>
@@ -22,6 +25,10 @@
     <string name="auto_start_label">开机自启</string>
     <string name="done">完成</string>
     <string name="open">打开</string>
+    <string name="no_apps">暂未添加任何应用。\n点击 \"管理应用\" 进行添加。</string>
+    <string name="panel_tip">长按右侧边缘以打开面板</string>
+    <string name="accessibility_service_description">检测系统导航手势，轻松实现悬浮面板自动关闭。</string>
+
     <string name="section_appearance">外观</string>
     <string name="section_interaction">交互</string>
     <string name="section_handle">触发条与指示影</string>
@@ -30,49 +37,190 @@
     <string name="section_layout_tuning">布局微调</string>
     <string name="section_general">通用</string>
     <string name="section_advanced_options">高级选项</string>
+    
     <string name="app_theme">应用主题</string>
+    <string name="theme_follow_system">跟随系统</string>
+    <string name="ui_style_theme">UI 风格主题</string>
+    <string name="theme_origin">OriginOS (圆角)</string>
+    <string name="theme_hyperos">HyperOS (毛玻璃)</string>
+    <string name="theme_realme">Realme UI</string>
+    <string name="theme_rich">Rich UI (发光)</string>
+    
     <string name="blur_title">毛玻璃模糊</string>
+    <string name="blur_desc">在低端设备上可能导致卡顿 (仅限 Android 12+)</string>
     <string name="blur_intensity">模糊强度</string>
     <string name="invisible_bg">透明背景</string>
     <string name="panel_columns">面板列数</string>
     <string name="icon_shape">图标形状</string>
     <string name="icon_pack">图标包</string>
+    <string name="icon_pack_default">系统默认</string>
+    <string name="icon_pack_choose">选择</string>
     <string name="icon_scale">图标大小</string>
+    
     <string name="custom_accent_title">使用自定义强调色</string>
+    <string name="custom_bg_title">使用自定义面板背景</string>
     <string name="accent_color">强调色</string>
     <string name="panel_bg_color">面板背景色</string>
     <string name="btn_reset_ui_colors">重置 UI 颜色</string>
+    
+    <string name="service_button_style">服务按钮样式</string>
+    <string name="button_style_power">现代电源图标</string>
+    <string name="button_style_logo">经典 Logo</string>
+    
     <string name="panel_opacity">面板不透明度</string>
     <string name="corner_radius">圆角半径</string>
+    <string name="sidebar_max_height">侧边栏最大高度</string>
+    <string name="picker_max_height">编辑面板最大高度</string>
+    
+    <string name="visible_pill">显示指示影 (Pill)</string>
+    <string name="visible_pill_desc">在屏幕边缘显示视觉指示器</string>
+    <string name="pill_color">指示影颜色</string>
+    <string name="pill_thickness">指示影厚度</string>
+    <string name="touch_area_width">触控区域宽度</string>
+    <string name="handle_height">触发条高度</string>
+    
     <string name="edge_gestures">边缘滑动体验</string>
     <string name="edge_sensitivity">边缘滑动灵敏度</string>
+    <string name="req_accessibility">需要无障碍服务</string>
+    <string name="tap_gestures">点击手势</string>
+    <string name="tap_gestures_desc">为点击或长按触发条添加快捷操作</string>
     <string name="haptic_feedback">触感反馈</string>
+    
+    <string name="edge_seek_title">边缘滑动调节 (滑动以调节)</string>
+    <string name="edge_seek_desc">面板关闭时在触发条上上下滑动</string>
+    <string name="slide_brightness">滑动调节亮度</string>
+    <string name="slide_volume">滑动调节音量</string>
+    <string name="seek_sensitivity">滑动调节灵敏度</string>
+    
     <string name="automation_title">系统自动化 (Root/Shizuku)</string>
+    <string name="automation_desc">使用系统调用执行返回、主页和最近任务</string>
+    <string name="fullscreen_protection">全屏保护</string>
+    <string name="fullscreen_desc">在选定的应用中防止误触手势</string>
     <string name="game_mode">游戏模式</string>
+    <string name="game_mode_desc">在选定的应用中需要二次滑动</string>
+
+    <string name="main_hero_subtitle">流畅的控制中心</string>
+    <string name="main_service_title">侧边栏服务</string>
+    <string name="main_service_stopped">服务已停止</string>
+    <string name="main_service_running">服务正在运行</string>
+    <string name="main_test_sidebar">立即测试侧边栏</string>
+    
+    <string name="alert_battery_title">提升稳定性</string>
+    <string name="alert_battery_desc">将侧边栏排除在电池优化之外，防止系统在后台将其关闭。</string>
+    <string name="alert_battery_btn">允许后台运行</string>
+    
+    <string name="alert_freeform_title">多任务模式</string>
+    <string name="alert_freeform_desc">设置中已开启自由小窗模式，但在系统的开发者选项中被禁用。</string>
+    <string name="alert_freeform_btn">在设置中修复</string>
+    
+    <string name="alert_permission_title">需要权限</string>
+    <string name="alert_permission_desc">请允许 \'显示在其他应用上层\' 以使用侧边栏。</string>
+    <string name="alert_permission_btn">立即授予</string>
+    
     <string name="main_logs_title">系统活动日志</string>
     <string name="main_settings_btn">高级设置</string>
+    <string name="main_how_to_use">如何使用</string>
+    <string name="main_tutorial_desc">从屏幕边缘向内滑动并悬停片刻以呼出悬浮面板。如果开启了指示影，也可以直接点击它。</string>
+    <string name="main_sideload_note">如果权限被拦截：设置 → 应用 → 允许受限制的设置</string>
+
+    <string name="only_on_home">仅在主屏幕显示</string>
+    <string name="only_on_home_desc">不在主屏幕/桌面时隐藏触发条和手势</string>
+    <string name="notch_gestures">刘海/挖孔手势</string>
+    <string name="enable_notch_gestures">启用刘海/挖孔手势</string>
+    <string name="notch_gestures_desc">在摄像头刘海/挖孔区域添加点击手势</string>
+    <string name="notch_tap_gestures">刘海/挖孔点击手势</string>
+    
     <string name="action_flashlight">手电筒</string>
     <string name="action_camera">相机</string>
     <string name="action_rotation">切换自动旋转</string>
     <string name="action_fav_app">打开收藏应用</string>
+
+    <string name="indicator_flashlight_on">手电筒已开启</string>
+    <string name="indicator_flashlight_off">手电筒已关闭</string>
+    <string name="indicator_rotation_on">自动旋转已开启</string>
+    <string name="indicator_rotation_off">自动旋转已关闭</string>
+    
+    <string name="status_service_active">服务正在运行</string>
+    <string name="status_automation_stopped">自动化已停止</string>
+    <string name="apps_selected_singular">已选择 1 个应用</string>
+    <string name="apps_selected_plural">已选择 %d 个应用</string>
+
     <string name="misc_section_general">通用</string>
     <string name="misc_app_language">应用语言</string>
     <string name="misc_section_backup">备份与恢复</string>
     <string name="misc_export_title">导出设置</string>
+    <string name="misc_export_desc">将设置保存到内部存储</string>
     <string name="misc_import_title">导入设置</string>
+    <string name="misc_import_desc">从之前的 JSON 备份中恢复</string>
+
     <string name="dialog_reset_title">重置所有设置？</string>
+    <string name="dialog_reset_msg">这会将所有配置和侧边栏应用恢复为原始默认状态。</string>
     <string name="btn_reset">重置</string>
+    <string name="toast_reset_success">设置重置成功</string>
+    <string name="toast_browser_error">无法打开浏览器</string>
+    
+    <string name="manage_apps_desc">选择要在侧边栏中显示的应用</string>
     <string name="view_repo_title">查看仓库</string>
+    <string name="view_repo_desc">在 GitHub 上查看源代码</string>
+    <string name="reset_defaults_desc">将所有设置恢复为出厂状态</string>
+    
+    <string name="search_settings_hint">搜索设置…</string>
+    <string name="main_menu_appearance_desc">设置深色模式，调整颜色和比例</string>
+    <string name="main_menu_interaction_desc">手势、触感反馈、位置偏好</string>
+    <string name="main_menu_handle_desc">尺寸和位置调整</string>
     <string name="section_tools">仪表盘工具</string>
+    <string name="main_menu_tools_desc">自定义工具面板</string>
     <string name="section_misc">杂项</string>
+    <string name="main_menu_misc_desc">备份、恢复及更多</string>
+
+    <string name="tap_gestures_summary">点击: %1$s, 双击: %2$s, 三击: %3$s, 长按: %4$s</string>
+    <string name="apps_selected_none">已选择 0 个应用</string>
+    
+    <string name="freeform_mode_standard">标准 (80%)</string>
+    <string name="freeform_mode_portrait">竖屏 (较窄)</string>
+    <string name="freeform_mode_maximized">最大化</string>
+    <string name="freeform_mode_custom">自定义 (%1$d%% × %2$d%%)</string>
+    <string name="freeform_custom_windowing_mode">自定义窗口模式代码</string>
+    <string name="freeform_custom_windowing_mode_desc">为原生系统悬浮窗输入自定义整数代码 (Nothing: 102, 小米: 12, Vivo/OriginOS: 106, Realme: 100)</string>
+    <string name="freeform_use_shell">使用原生 Shell 启动</string>
+    <string name="freeform_use_shell_desc">推荐用于 OriginOS/HyperOS。复刻 ADB 命令以实现完美缩放 (需要 Shizuku/Root)</string>
+    <string name="dialog_custom_windowing_mode">自定义窗口模式</string>
+    
     <string name="anim_feel_calm">舒缓 (较慢)</string>
     <string name="anim_feel_balanced">均衡 (默认)</string>
     <string name="anim_feel_snappy">干脆</string>
     <string name="anim_feel_instant">瞬间</string>
     <string name="anim_feel_disabled">已禁用</string>
+    
+    <string name="dialog_automation_title">自动化不可用</string>
+    <string name="dialog_automation_msg">使用此功能需要 Root 或 Shizuku。请先设置 \'系统自动化\'。</string>
     <string name="btn_setup">去设置</string>
+    <string name="loading_apps">正在加载应用…</string>
+    <string name="please_wait_apps">请稍候，正在加载应用列表。</string>
+    <string name="hint_search_apps">搜索应用…</string>
     <string name="btn_save">保存</string>
+    <string name="dialog_window_size">窗口大小</string>
+    <string name="dialog_anim_feel">动画感觉</string>
+    
+    <string name="picker_title_hide">选择要隐藏侧边栏的应用</string>
+    <string name="picker_title_game">选择游戏模式应用</string>
+    <string name="picker_title_favorite">选择收藏应用</string>
+    
+    <string name="toast_fav_app_unset">未设置收藏应用</string>
+    <string name="toast_app_not_found">未找到应用</string>
+    <string name="toast_freeform_enabled">系统自由小窗模式已启用</string>
+    <string name="snackbar_freeform_disabled">系统的自由小窗模式在开发者选项中被禁用</string>
     <string name="btn_fix">修复</string>
+    
+    <string name="toast_shortcut_sent">创建快捷方式请求已发送。请检查您的主屏幕。</string>
+    <string name="toast_launcher_no_shortcut">启动器不支持固定快捷方式</string>
+    <string name="toast_shortcut_added">快捷方式已添加到主屏幕</string>
+    <string name="label_toggle_sidebar">切换侧边栏</string>
+    
+    <string name="status_granted">已授权</string>
+    <string name="status_not_granted">未授权</string>
+    <string name="label_native_gesture">原生手势</string>
+
     <string name="action_none">禁用</string>
     <string name="action_launcher">桌面</string>
     <string name="action_screenshot">截图</string>
@@ -85,23 +233,194 @@
     <string name="action_lock_screen">锁屏</string>
     <string name="action_power_menu">电源菜单</string>
     <string name="action_move_handle">移动触发条 (拖动)</string>
+
+    <!-- Interaction Settings: Panel Experience -->
     <string name="section_panel_experience">面板体验</string>
+    <string name="feature_landscape_label">在横屏模式下显示面板</string>
+    <string name="feature_landscape_desc">允许在设备处于横屏模式时打开侧边栏</string>
+    <string name="feature_notification_apps_label">通知应用区域</string>
+    <string name="feature_notification_apps_desc">在顶部专属区域显示最近有通知的应用</string>
+    <string name="feature_remember_scroll_label">记忆滚动位置</string>
+    <string name="feature_remember_scroll_desc">重新打开侧边栏或选择器时恢复上次的滚动位置</string>
+    <string name="feature_auto_show_keyboard_label">自动弹出键盘</string>
+    <string name="feature_auto_show_keyboard_desc">打开应用选择器时自动聚焦搜索栏并弹出键盘</string>
+
+    <!-- Interaction Settings: System & Behavior -->
     <string name="section_system_behavior">系统与行为</string>
+    <string name="feature_auto_start_label">开机自动启动</string>
+    <string name="feature_auto_start_desc">设备重启后自动开启侧边栏服务</string>
+    <string name="feature_show_logs_label">启用调试日志</string>
+    <string name="feature_show_logs_desc">在面板内显示内部进程日志以便进行故障排除</string>
+
+    <string name="feature_anim_feel_label">动画感觉</string>
+    <string name="feature_picker_gap_label">选择器间距 (Gap)</string>
+    <string name="feature_picker_gap_desc">侧边栏与应用选择器面板之间的水平间距</string>
+
+    <!-- Interaction Settings: Desktop Shortcuts -->
+    <string name="section_desktop_shortcuts">桌面快捷方式</string>
+    <string name="feature_add_shortcut_label">添加快捷开关</string>
+    <string name="feature_add_shortcut_desc">将快捷方式固定到主屏幕，以便快速打开/关闭侧边栏</string>
+
+    <!-- System Permissions & Setup -->
     <string name="section_permissions_setup">权限与系统设置</string>
+    <string name="main_menu_permissions_setup_desc">悬浮窗、无障碍、电池、自启动、Root/Shizuku</string>
     <string name="setup_manage_title">权限与设置</string>
+    <string name="setup_manage_subtitle">随时查看、切换或修复系统权限</string>
     <string name="setup_done">完成</string>
+
+    <!-- Localized additions -->
     <string name="action_start">开始</string>
     <string name="action_stop">停止</string>
+    <string name="action_fix">修复</string>
+    <string name="status_accessibility_required">需要无障碍服务</string>
     <string name="dialog_close">关闭</string>
     <string name="setup_welcome_title">欢迎使用 Smart Edge</string>
+    <string name="setup_welcome_subtitle">流畅开源的控制中心</string>
     <string name="setup_section_required">必须权限</string>
     <string name="setup_overlay_title">悬浮窗权限</string>
+    <string name="setup_overlay_desc">在其他应用上层显示</string>
     <string name="setup_accessibility_title">无障碍服务</string>
+    <string name="setup_accessibility_desc">流畅手势所需</string>
     <string name="setup_section_advanced">高级与后台</string>
     <string name="setup_automation_title">原生手势</string>
+    <string name="setup_automation_desc">Root/Shizuku：高性能</string>
     <string name="setup_battery_title">电池优化</string>
-    <string name="setup_autostart_title">自动启动</string>
+    <string name="setup_battery_desc">提高后台运行的稳定性</string>
+    <string name="setup_autostart_title">自启动权限</string>
+    <string name="setup_autostart_desc">重启后自动恢复所需</string>
     <string name="setup_notifications_title">通知使用权</string>
+    <string name="setup_notifications_desc">效率中心所需</string>
     <string name="setup_grant_all">授予全部</string>
+    <string name="setup_all_granted">全部已授权</string>
     <string name="setup_continue">继续</string>
+    <string name="tools_enable_master">启用仪表盘工具</string>
+    <string name="tools_enable_master_desc">侧边栏仪表盘区域（底部区域）的主开关</string>
+    <string name="tools_dedicated_folder">独立工具文件夹</string>
+    <string name="tools_dedicated_folder_desc">在应用列表中添加一个文件夹按钮，打开单独的工具菜单</string>
+    <string name="tools_dashboard_items">仪表盘项目</string>
+    <string name="tools_sys_info">系统信息悬浮窗</string>
+    <string name="tools_sys_info_desc">在侧边栏显示实时的内存和电池统计信息</string>
+    <string name="tools_power_menu">电源菜单</string>
+    <string name="tools_power_menu_desc">将电源/重启工具添加到仪表盘</string>
+    <string name="tools_volume_controls">音量控制</string>
+    <string name="tools_volume_controls_desc">将音量加/减键添加到仪表盘</string>
+    <string name="tools_brightness_controls">亮度控制</string>
+    <string name="tools_brightness_controls_desc">将亮度加/减键添加到仪表盘</string>
+    <string name="tools_screenshot_button">截图按钮</string>
+    <string name="tools_screenshot_button_desc">在侧边栏底部显示一个截图按钮</string>
+    <string name="tools_service_integration">服务集成</string>
+    <string name="tools_shizuku_service">Shizuku 服务</string>
+    <string name="tools_not_connected">未连接</string>
+    <string name="tools_connected">已连接</string>
+    <string name="tools_link_shizuku">链接 Shizuku</string>
+    <string name="interaction_section_trigger">主触发器与手势</string>
+    <string name="interaction_section_specialized">专门交互</string>
+    <string name="interaction_section_multitasking">多任务与窗口</string>
+    <string name="interaction_drag_split">拖动开启分屏</string>
+    <string name="interaction_drag_split_desc">将图标拖动到顶部/底部边缘以分屏模式启动</string>
+    <string name="interaction_freeform">自由小窗模式</string>
+    <string name="interaction_freeform_desc">以悬浮小窗启动应用 (需要系统支持)</string>
+    <string name="interaction_window_size">窗口大小</string>
+    <string name="freeform_size_standard">标准 (80%)</string>
+    <string name="freeform_size_portrait">竖屏 (较窄)</string>
+    <string name="freeform_size_maximized">最大化</string>
+    <string name="interaction_section_shortcuts">快捷方式与自动化</string>
+    <string name="anim_calm">舒缓 (较慢)</string>
+    <string name="anim_balanced">均衡 (默认)</string>
+    <string name="anim_instant">瞬间</string>
+    <string name="anim_disabled">已禁用</string>
+    <string name="dialog_permission_required">需要权限</string>
+    <string name="dialog_native_shell_desc">原生 Shell 启动需要 Shizuku 或 Root 才能运行。请在下方的自动化设置中启用其中之一。</string>
+    <string name="dialog_freeform_window_size">自由小窗大小</string>
+    <string name="appearance_show_bottom_arrow">显示应用抽屉箭头</string>
+    <string name="appearance_show_app_names">显示应用名称</string>
+    <string name="appearance_show_app_names_desc">选择是否在图标下方显示应用名称</string>
+    <string name="appearance_app_names_sidebar">在侧边栏中</string>
+    <string name="appearance_app_names_sidebar_desc">在悬浮侧边栏的图标下方显示应用名称</string>
+    <string name="appearance_app_names_drawer">在应用抽屉中</string>
+    <string name="appearance_app_names_drawer_desc">在应用抽屉的图标下方显示应用名称</string>
+    <string name="appearance_auto_close">自动关闭侧边栏</string>
+    <string name="auto_close_never">从不</string>
+    <string name="auto_close_3s">3 秒</string>
+    <string name="auto_close_5s">5 秒</string>
+    <string name="auto_close_10s">10 秒</string>
+    <string name="columns_1">1 列</string>
+    <string name="columns_2">2 列</string>
+    <string name="shape_circle">圆形</string>
+    <string name="shape_square">方形</string>
+    <string name="shape_rounded">圆角矩形</string>
+    <string name="shape_squircle">超椭圆 (Squircle)</string>
+    <string name="toast_ui_colors_reset">UI 颜色已恢复为默认值</string>
+    <string name="toast_accent_locked_origin">强调色在 OriginOS 主题下已锁定</string>
+    <string name="toast_bg_locked_origin">背景色在 OriginOS 主题下已锁定</string>
+    <string name="hint_search_smart_edge">搜索 Smart Edge…</string>
+    <string name="picker_tab_apps">应用</string>
+    <string name="picker_tab_activities">活动</string>
+    <string name="picker_all_apps">所有应用</string>
+    <string name="picker_all_activities">所有活动</string>
+    <string name="picker_manage_panel">管理 Smart Edge</string>
+    <string name="picker_btn_edit">编辑</string>
+    <string name="picker_btn_done">完成</string>
+    <string name="picker_active_notifications">活动通知</string>
+    <string name="secure_dialog_title">原生手势引擎</string>
+    <string name="secure_status_inactive">系统自动化当前未激活</string>
+    <string name="secure_status_active">系统自动化已激活</string>
+    <string name="secure_desc">无需传统的无障碍服务即可启用高性能手势。</string>
+    <string name="secure_manual_adb">手动设置 (ADB)</string>
+    <string name="secure_copy_cmd">复制命令</string>
+    <string name="secure_one_tap">一键启用方式</string>
+    <string name="secure_shizuku_desc">基于 ADB 的无线自动化</string>
+    <string name="secure_root_desc">深入系统底层的集成</string>
+    <string name="btn_grant">授予</string>
+    <string name="btn_revoke">撤销</string>
+    <string name="misc_section_diagnostics">诊断与日志</string>
+    <string name="misc_crash_logs_title">崩溃与诊断日志</string>
+    <string name="misc_crash_logs_desc">查看、复制或导出本地崩溃报告，无需使用 ADB</string>
+    <string name="misc_no_crash_logs">未找到崩溃报告。应用程序一直运行平稳，没有发生未捕获的错误。</string>
+    <string name="btn_copy">复制</string>
+    <string name="support_title">支持 Smart Edge</string>
+    <string name="support_desc">Smart Edge 是 100% 免费开源的。您的支持有助于让这个项目继续走下去！</string>
+    <string name="support_tap_to_copy">点击任何项目即可复制。</string>
+    <string name="btn_support_dev">支持开发</string>
+    <string name="settings_reset_defaults">恢复默认设置</string>
+    <string name="btn_apply">应用</string>
+
+    <!-- Permissions Dashboard Strings -->
+    <string name="permissions_dashboard_title">系统权限</string>
+    <string name="permissions_status_all_good_title">所有系统运行正常</string>
+    <string name="permissions_status_all_good_desc">所有权限已激活，以获得最佳稳定性。</string>
+    <string name="permissions_status_warning_title">需要采取行动</string>
+    <string name="permissions_status_warning_desc">核心权限需要设置。</string>
+    <string name="permissions_section_essential">基本权限</string>
+    <string name="permissions_section_stability">后台与稳定性</string>
+    <string name="permissions_section_advanced">高级引擎</string>
+    <string name="perm_status_active">激活</string>
+    <string name="perm_status_granted">已授权</string>
+    <string name="perm_status_missing">缺失</string>
+    <string name="perm_status_unrestricted">无限制</string>
+    <string name="perm_status_optimized">已优化</string>
+    <string name="perm_status_configured">已配置</string>
+    <string name="perm_status_optional">可选</string>
+    <string name="perm_status_disabled">已禁用</string>
+    <string name="perm_btn_grant">授予</string>
+    <string name="perm_btn_configure">配置</string>
+    <string name="perm_btn_manage">管理</string>
+    <string name="perm_btn_fix_all">修复全部</string>
+    <string name="perm_btn_all_good">均已激活</string>
+    <string name="perm_overlay_title">在其他应用上层显示</string>
+    <string name="perm_overlay_desc">悬浮侧边栏覆盖在应用之上</string>
+    <string name="perm_accessibility_title">无障碍服务</string>
+    <string name="perm_accessibility_desc">返回和主页手势检测</string>
+    <string name="perm_battery_title">电池优化</string>
+    <string name="perm_battery_desc">防止后台被强行关闭</string>
+    <string name="perm_autostart_title">自启动权限</string>
+    <string name="perm_autostart_desc">设备重启后自动恢复</string>
+    <string name="perm_notifications_title">通知中心</string>
+    <string name="perm_notifications_desc">应用抽屉中的通知预览</string>
+    <string name="perm_automation_title">原生手势引擎</string>
+    <string name="perm_automation_desc">Root / Shizuku 手势引擎</string>
+    <string name="dialog_remove_app_msg">从侧边栏中移除？</string>
+    <string name="btn_remove">移除</string>
+    <string name="search_no_results">未找到匹配的设置</string>
+    <string name="search_no_results_desc">尝试搜索关键字，如手势、模糊、电池或工具。</string>
 </resources>
